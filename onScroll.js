@@ -1,4 +1,9 @@
+/*
 
+ define the class or id that, once in the 
+ viewport, will trigger the action(s)
+
+*/
 
 var $findme = $('.container');
 
@@ -18,7 +23,12 @@ function Scrolled() {
         } else visible = true;
 
         if (!prevVisible && visible) {
-            $findme.shuffleLetters();
+            /*
+
+            add the action(s) you want
+            to trigger in here
+
+            */
         }
         $section.prop('_visible', visible);
     });
@@ -27,7 +37,12 @@ function Scrolled() {
 function Setup() {
     var $top = $('#top'),
         $bottom = $('#bottom');
+    /* 
 
+    you change the height in the two lines below 
+    if you want or need 
+
+    */
     $top.height(500);
     $bottom.height(500);
 
